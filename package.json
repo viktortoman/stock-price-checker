@@ -1,0 +1,13 @@
+{
+    "name": "stock-price-checker",
+    "version": "1.0.0",
+    "description": "Dockerized environment with a database, a back-end and a front-end application.",
+    "scripts": {
+        "build:back": "docker-compose build nestjs-app",
+        "start:db": "docker-compose up mysql-db",
+        "start:back": "docker-compose up nestjs-app --renew-anon-volumes",
+        "clean": "docker-compose down -v"
+    },
+    "author": "Tomán Viktor",
+    "license": "ISC"
+}
